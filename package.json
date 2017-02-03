@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LukasHechenberger/args-parser.git"
+    "url": "git+https://github.com/ls-age/args-parser.git"
   },
   "keywords": [
     "args",
@@ -32,9 +32,9 @@
   "author": "Lukas Hechenberger <npm@ls-age.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LukasHechenberger/args-parser/issues"
+    "url": "https://github.com/ls-age/args-parser/issues"
   },
-  "homepage": "https://github.com/LukasHechenberger/args-parser#readme",
+  "homepage": "https://github.com/ls-age/args-parser#readme",
   "devDependencies": {
     "babel-cli": "^6.22.2",
     "babel-plugin-istanbul": "^3.1.2",
