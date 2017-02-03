@@ -233,6 +233,7 @@ describe('Parser', function() {
       const listener = spy();
       parser.on('test', listener);
 
+      parser.parse(['-t']);
       expect(listener.calledOnce, 'to be', true);
       expect(listener.lastCall.args, 'to equal', [true]);
     });
