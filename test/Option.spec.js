@@ -35,7 +35,9 @@ describe('Option', function() {
     });
 
     it('should return true for any other type', function() {
-      Object.values(OptionType).filter(type => type !== OptionType.Boolean)
+      Object.keys(OptionType)
+        .map(k => OptionType[k])
+        .filter(type => type !== OptionType.Boolean)
         .forEach(type => expect((new Option({ type })).requiresValue, 'to be', true));
     });
   });
@@ -52,7 +54,8 @@ describe('Option', function() {
 
     it('should return original value for any other type', function() {
       const value = 'value';
-      Object.values(OptionType)
+      Object.keys(OptionType)
+        .map(k => OptionType[k])
         .filter(type => ![OptionType.Number].includes(type))
         .forEach(type => expect((new Option({ type })).parsedValue(value), 'to be', value));
     });
