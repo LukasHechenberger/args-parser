@@ -34,4 +34,4 @@ console.log(args.number); // logs `13`
 console.log(args.test); // logs `true`
 ```
 
-Look at the docs and tests for more detailed usage examples.
+Look at the [docs](https://doc.esdoc.org/github.com/ls-age/args-parser) and [tests](https://doc.esdoc.org/github.com/ls-age/args-parser/test.html) for more detailed usage examples.
