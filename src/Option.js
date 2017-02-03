@@ -11,7 +11,7 @@ export const OptionType = {
   Number: 'number',
 };
 
-const OptionTypeValues = Object.values(OptionType);
+const OptionTypeValues = Object.keys(OptionType).map(k => OptionType[k]);
 
 /**
  * Option definition that can be parse by {@link Parser}.
