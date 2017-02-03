@@ -1,0 +1,76 @@
+{
+  "name": "@ls-age/args-parser",
+  "version": "0.1.0",
+  "description": "parses command line arguments passed to node.js",
+  "main": "out/index.js",
+  "scripts": {
+    "compile": "babel src --out-dir out",
+    "compile:watch": "npm run compile -- --watch",
+    "docs": "esdoc -c esdoc.json",
+    "lint": "eslint src",
+    "lint:test": "eslint test",
+    "prepublish": "npm run compile && npm run docs",
+    "test": "mocha --recursive --require babel-register \"./test/**/*.spec.js\"",
+    "test:watch": "npm test -- --watch --reporter min",
+    "test:coverage": "NODE_ENV=test nyc --reporter=html npm test",
+    "test:docs": "blcl docs/api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukasHechenberger/args-parser.git"
+  },
+  "keywords": [
+    "args",
+    "argv",
+    "parser",
+    "option",
+    "options"
+  ],
+  "author": "Lukas Hechenberger <npm@ls-age.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LukasHechenberger/args-parser/issues"
+  },
+  "homepage": "https://github.com/LukasHechenberger/args-parser#readme",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-plugin-istanbul": "^3.1.2",
+    "babel-preset-node6": "^11.0.0",
+    "broken-link-checker-local": "^0.1.1",
+    "esdoc": "^0.5.2",
+    "esdoc-plugin-require-coverage": "^0.1.2",
+    "eslint": "^3.14.1",
+    "eslint-config-lsage": "^0.1.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.1.2",
+    "sinon": "^1.17.7",
+    "unexpected": "^10.23.0"
+  },
+  "eslintConfig": {
+    "extends": "lsage"
+  },
+  "babel": {
+    "presets": [
+      "node6"
+    ],
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "src/**/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false,
+    "instrument": false,
+    "check-coverage": true
+  }
+}
