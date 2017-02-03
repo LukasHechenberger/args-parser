@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "parses command line arguments passed to node.js",
   "main": "out/index.js",
+  "engines": {
+    "node": ">=6.0"
+  },
   "scripts": {
     "compile": "babel src --out-dir out",
     "compile:watch": "npm run compile -- --watch",
