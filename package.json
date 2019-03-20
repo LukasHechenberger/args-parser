@@ -37,17 +37,17 @@
   "homepage": "https://github.com/ls-age/args-parser#readme",
   "devDependencies": {
     "babel-cli": "^6.22.2",
-    "babel-plugin-istanbul": "^3.1.2",
+    "babel-plugin-istanbul": "^5.1.1",
     "babel-preset-node6": "^11.0.0",
-    "broken-link-checker-local": "^0.1.1",
-    "esdoc": "^0.5.2",
+    "broken-link-checker-local": "^0.2.0",
+    "esdoc": "^1.1.0",
     "esdoc-plugin-require-coverage": "^0.1.2",
-    "eslint": "^3.14.1",
-    "eslint-config-lsage": "^0.1.0",
-    "mocha": "^3.2.0",
-    "nyc": "^10.1.2",
-    "sinon": "^1.17.7",
-    "unexpected": "^10.23.0"
+    "eslint": "^5.15.3",
+    "eslint-config-lsage": "^0.3.0",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0",
+    "sinon": "^7.3.0",
+    "unexpected": "^11.2.0"
   },
   "eslintConfig": {
     "extends": "lsage"
