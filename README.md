@@ -4,7 +4,7 @@ Parses command line arguments passed to node.js.
 
 [![CircleCI](https://circleci.com/gh/ls-age/args-parser.svg?style=shield)](https://circleci.com/gh/ls-age/args-parser)
 [![codecov](https://codecov.io/gh/ls-age/args-parser/branch/master/graph/badge.svg)](https://codecov.io/gh/ls-age/args-parser)
-[![ESDoc](https://doc.esdoc.org/github.com/ls-age/args-parser/badge.svg)](https://doc.esdoc.org/github.com/ls-age/args-parser)
+[![ESDoc](https://doc.esdoc.org/github.com/ls-age/args-parser/badge.svg)](https://doc.esdoc.org/github.com/ls-age/args-parser) [![Greenkeeper badge](https://badges.greenkeeper.io/ls-age/args-parser.svg)](https://greenkeeper.io/)
 
 **Note that this package is still under heavy development.**
 
